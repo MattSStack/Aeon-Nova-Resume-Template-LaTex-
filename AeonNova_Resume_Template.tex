@@ -1,0 +1,137 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Resume Template for Sharing                             %%
+%% Created by Matt Stack (Aeon Nova Future Labs)           %%
+%% Original Version: November 2024                         %%
+%% License: LaTeX Project Public License 1.3c              %%
+%%                                                         %%
+%% This LaTeX template provides a sleek, modern resume     %%
+%% format, ready for easy customization.                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,10pt]{article}
+\usepackage{tweaklist}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{helvet}
+\usepackage{hyperref}
+
+% Font settings
+\renewcommand{\familydefault}{\sfdefault}
+
+% Enhanced colors
+\definecolor{myblue}{RGB}{26, 26, 46}     % Deep Midnight Blue
+\definecolor{mybronze}{RGB}{205, 127, 50} % Subdued Bronze
+\definecolor{mysecondary}{RGB}{51, 51, 76} % Lighter Blue for contrast
+\definecolor{bggray}{RGB}{230, 230, 230}  % Darker Gray Background
+\definecolor{black}{RGB}{0, 0, 0}          % Neutral Black
+
+% Hyperlink colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=myblue,
+    urlcolor=mybronze
+}
+
+% Page style
+\pagecolor{bggray} % Set darker gray background
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\lhead{\textbf{\textcolor{black}{Full Name}}}
+\rhead{\textit{\textcolor{mybronze}{Your Title, Your Company}}}
+\cfoot{\textcolor{black}{\thepage}}
+
+% Section formatting
+\titleformat{\section}
+    {\color{myblue}\Large\bfseries}
+    {}{0em}
+    {}
+    [\vspace{-0.25em}\rule{\textwidth}{0.4pt}\vspace{0.25em}]
+
+\titleformat{\subsection}
+    {\color{mysecondary}\large\bfseries}
+    {}{0em}
+    {}
+
+% Custom bullet points
+\renewcommand{\labelitemi}{\textcolor{mybronze}{\textbullet}}
+
+% Improved spacing
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+\linespread{1.1} % Slightly reduced line spacing for a more compact look
+
+% Custom commands for consistent styling
+\newcommand{\daterange}[1]{\textit{\textcolor{mybronze}{#1}}}
+\newcommand{\skill}[1]{\textbf{\textcolor{mysecondary}{#1}}}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE \textbf{\textcolor{black}{Full Name}}} \\[0.3cm]
+    \textcolor{mysecondary}{Street Address, City, State ZIP} \\[0.1cm]
+    \href{mailto:youremail@example.com}{\texttt{\textcolor{myblue}{youremail@example.com}}} 
+    \textcolor{mybronze}{|} 
+    \textcolor{black}{Your Phone Number}
+\end{center}
+
+\vspace{0.1cm}
+
+\section*{Professional Summary}
+\textcolor{mysecondary}{
+Accomplished product and project leader with extensive experience in AI-driven innovation and user-focused development. As the [Your Role] of [Your Company], I specialize in building sophisticated AI tools and frameworks, focusing on federated learning, user experience enhancement, and seamless product integration. Passionate about bridging technology with practical applications, I leverage a unique blend of strategic vision, technical expertise, and collaborative leadership to create transformative solutions.
+}
+
+\section*{Employment History}
+
+\subsection*{Your Role, Your Company}
+\daterange{Start Date - End Date}
+\begin{itemize}
+    \item Led the development of AI-powered software tools, emphasizing user-centric design, product strategy, and advanced technology integration.
+    \item Pioneered integration efforts to enhance productivity and efficiency.
+    \item Specialized in federated learning, meta-learning, and adaptive AI systems to create transformative solutions.
+    \item Contributed to the community, supporting AI-enhanced conversational agents.
+\end{itemize}
+
+\subsection*{Your Role, Company Name}
+\daterange{Start Date - End Date}
+\begin{itemize}
+    \item Managed key projects, ensuring seamless user experience.
+    \item Led meetings, handled submittals, and resolved site issues during project milestones.
+    \item Integrated collaborative tools to streamline project communication and efficiency.
+\end{itemize}
+
+\subsection*{Your Role, Company Name}
+\daterange{Start Date - End Date}
+\begin{itemize}
+    \item Managed procurement for key projects, including major manufacturing initiatives.
+    \item Led team in key areas such as fabrication, installation, and scheduling.
+    \item Played a key role in integrating advanced AI and automated systems to optimize processes.
+\end{itemize}
+\vspace{-0.5em}
+
+\section*{Education}
+\textit{\textcolor{mybronze}{Degree Title (Your Level of Completion)}}  \\
+\textcolor{mysecondary}{Your University, Location}  \\
+Relevant coursework: (List of relevant courses)
+
+\section*{Relevant Skills}
+\begin{itemize}
+    \item \skill{Product Strategy \& Vision}: Defined and executed product visions, developed strategic roadmaps, and aligned AI innovations with user needs.
+    \item \skill{User Experience \& Product Development}: Focused on creating intuitive user interfaces and integrating advanced AI models into real-world applications.
+    \item \skill{AI Model Development}: Specialized in federated learning, meta-learning, and adaptive AI model integration.
+    \item \skill{Cross-functional Leadership}: Effective collaboration with engineering, research, marketing, and support teams.
+    \item \skill{Construction \& Project Management}: Extensive experience in managing construction projects, optimizing workflows, and integrating technology solutions.
+\end{itemize}
+
+\section*{Community Contributions}
+\begin{itemize}
+    \item \skill{Community Contributions}: Contributed to open-source communities by sharing expertise on AI-enhanced tools, language model integration, and support development.
+\end{itemize}
+
+\end{document}
