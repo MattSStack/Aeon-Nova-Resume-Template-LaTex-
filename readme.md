@@ -1,13 +1,7 @@
 README for Resume Template
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Resume Template for Sharing                             %%
-%% Created by Matt Stack (Aeon Nova Future Labs)           %%
-%% Original Version: November 2024                         %%
-%% License: LaTeX Project Public License 1.3c              %%
-%%                                                         %%
-%% This LaTeX template provides a sleek, modern resume     %%
-%% format, ready for easy customization.                   %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 Overview
 
 This project contains LaTeX files for creating a professional resume using a sleek, modern style consistent with the aesthetic of Aeon Nova Future Labs. The main document (resume_template_for_sharing.tex) and style files (tweaklist.sty, customcolors.sty, etc.) provide customizable and visually appealing components for creating resumes tailored to your needs.
@@ -40,11 +34,11 @@ Colors: The customcolors.sty file allows you to tweak color definitions easily. 
 
 List Styles: Modify tweaklist.sty to adjust the appearance of itemized and enumerated lists.
 
-Fonts and Styling: You can change font settings in resume_template_for_sharing.tex by modifying the - **Fonts and Styling**: You can change font settings in resume_template_for_sharing.texby modifying the\usepackage{helvet}line or updating the
-enewcommand{amilydefault}{\sfdefault}` line.
+Fonts and Styling: You can change font settings in resume_template_for_sharing.tex by modifying the \usepackage{helvet} line or updating the \renewcommand{\familydefault}{\sfdefault} line.
 
 Usage Tips
 
 Collaborate with Overleaf: If you are working in a team or want feedback, Overleaf is a great online editor that allows for real-time collaboration.
 
 Version Control: Use Git for version control to track changes and maintain different versions of your resume for various job applications.
+
